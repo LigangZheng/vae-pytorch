@@ -15,23 +15,23 @@ in_height = 28
 in_width = 28
 
 conv = {
-    'channels': [16, 8],
-    'strides': [3, 2],
-    'kernels': [3, 3],
-    'paddings': [1, 1],
-    'dilations': [1, 1]
+    'channels': [16, 8, 8],
+    'strides': [2, 2, 2],
+    'kernels': [3, 3, 3],
+    'paddings': [1, 1, 1],
+    'dilations': [1, 1, 1]
 }
 
 pool = {
-    'strides': [2, 1],
-    'kernels': [2, 2]
+    'strides': [2, 1, 1],
+    'kernels': [2, 2, 2]
 }
 
 deconv = {
-    'channels': [16, 8, 1],
-    'strides': [2, 3, 2],
-    'kernels': [3, 5, 2],
-    'paddings': [0, 1, 1],
+    'channels': [16, 8, 8, 1],
+    'strides': [2, 3, 3, 2],
+    'kernels': [3, 2, 2, 2],
+    'paddings': [0, 1, 1, 1],
 }
 
 def conv_formula(h, p, d, k, s):

@@ -4,9 +4,7 @@
 
 #### Remarks
 
-It seems the traditional normalization scheme (`mean=0.1307`, `std=0.3081`) leads to extremely poor performance (i.e. blurry white-ish blobs). I ended up using the `0.5` normalization which shifts the range of pixel values to [-1, 1].
-
-The convolutional autoencoder is taken from [SherlockLiao](https://github.com/SherlockLiao/pytorch-beginner/tree/master/08-AutoEncoder). Do check out his repository!
+It seems the traditional normalization scheme (`mean=0.1307`, `std=0.3081`) leads to extremely poor performance (i.e. blurry white-ish blobs). I ended up using the `0.5` normalization which shifts the range of pixel values to [-1, 1]. I got the idea from [SherlockLiao](https://github.com/SherlockLiao/pytorch-beginner/tree/master/08-AutoEncoder) so do check out his repository!
 
 A `tanh` activation right after the decoder layer really helps with the reconstructions. I assume that since tanh's range is [-1, 1], we are in a way "cheating" and helping the autoencoder's output match the initial normalization distribution.
 
