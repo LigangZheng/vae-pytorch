@@ -1,5 +1,7 @@
 # AE and VAE Playground
 
+**Disclaimer**: VAE coming soon...
+
 #### Simple fully-connected autoencoder
 
 <p align="center">
@@ -35,5 +37,3 @@
 <p align="center">
  <img src="./plots/conv_ae_tanh.png" alt="Drawing">
 </p>
-
-
