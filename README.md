@@ -30,4 +30,10 @@
  <img src="./plots/stacked_ae_tanh.png" alt="Drawing">
 </p>
 
+#### Convolutional autoencoder with `tanh`
+
+<p align="center">
+ <img src="./plots/conv_ae_tanh.png" alt="Drawing">
+</p>
+
 
