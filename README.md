@@ -4,12 +4,12 @@
 
 #### Remarks
 
-The last activation of the decoder layer seems to be related to the loss used for training and the normalization scheme used on the training data. 
+The last activation of the decoder layer, the loss function, and the normalization scheme used on the training data are crucial for obtaining good reconstructions and preventing exploding negative losses. 
 
 - If the data range is `[-1, 1]`, then a `tanh` activation with an MSE loss does a good reconstruction job.
 - If the data range is `[0, 1]`, then a `sigmoid` activation with a binary cross entropy loss does a good reconstruction job.
 
-I assume that the activation function's range is crucial, and that by smartly picking one, we're helping the autoencoder's output more easily match the initial normalization distribution.
+I assume that by smartly picking the activation function's range, we're helping the autoencoder's output more easily match the initial normalization distribution.
 
 #### Simple fully-connected autoencoder (MSE)
 
