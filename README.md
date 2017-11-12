@@ -53,10 +53,16 @@ I assume that by smartly picking the activation function's range, we're helping 
  <img src="./plots/stacked_ae_bce.png" alt="Drawing">
 </p>
 
-#### Convolutional autoencoder with `tanh`
+#### Convolutional autoencoder with `tanh` (MSE)
 
 <p align="center">
  <img src="./plots/conv_ae_tanh.png" alt="Drawing">
+</p>
+
+#### Convolutional autoencoder (BCE)
+
+<p align="center">
+ <img src="./plots/conv_ae_bce.png" alt="Drawing">
 </p>
 
 ### References
