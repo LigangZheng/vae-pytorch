@@ -1,4 +1,4 @@
-# AE and VAE Playground
+# AE and VAE Playground.
 
 **Disclaimer**: VAE coming soon...
 
